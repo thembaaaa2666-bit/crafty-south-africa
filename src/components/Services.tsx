@@ -11,7 +11,18 @@ const services = [
     description: "Expert plumbing solutions for residential and commercial properties",
     icon: Droplet,
     image: plumbingImg,
-    features: ["Leak Detection & Repair", "Pipe Installation", "Drain Cleaning", "Emergency Services"],
+    features: [
+      "Geyser Installation & Repair",
+      "Leak Detection & Repair", 
+      "Toilet & Basin Installation",
+      "Shower & Bath Installation",
+      "Blocked Drains & Cleaning",
+      "Pipe Installation & Repairs",
+      "Tap Repairs & Replacements",
+      "Burst Pipe Emergency Repairs",
+      "Water Heater Services",
+      "Sewer Line Repairs"
+    ],
   },
   {
     title: "Electrical Services",

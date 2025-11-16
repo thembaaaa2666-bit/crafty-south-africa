@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -59,6 +59,34 @@ const Hero = () => {
               className="text-lg px-8 py-6"
             >
               View Services
+            </Button>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+            <Button
+              size="lg"
+              variant="secondary"
+              asChild
+              className="text-lg px-8 py-6"
+            >
+              <a
+                href="https://wa.me/27717984187"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="mr-2" size={20} />
+                WhatsApp Us
+              </a>
+            </Button>
+            <Button
+              size="lg"
+              variant="secondary"
+              asChild
+              className="text-lg px-8 py-6"
+            >
+              <a href="tel:+27637052631">
+                <Phone className="mr-2" size={20} />
+                Call Now
+              </a>
             </Button>
           </div>
         </div>

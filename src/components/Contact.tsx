@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -124,8 +124,31 @@ const Contact = () => {
                     <Phone className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+27 (0) 123 456 789</p>
+                    <h3 className="font-semibold mb-1">Call Us</h3>
+                    <a href="tel:+27637052631" className="text-muted-foreground hover:text-primary transition-colors">
+                      063 705 2631
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary/10 p-3 rounded-full">
+                    <MessageCircle className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-1">WhatsApp</h3>
+                    <a 
+                      href="https://wa.me/27717984187" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      071 798 4187
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -160,6 +183,34 @@ const Contact = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <div className="space-y-3">
+              <Button
+                asChild
+                className="w-full"
+                size="lg"
+              >
+                <a
+                  href="https://wa.me/27717984187"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="mr-2" size={18} />
+                  Chat on WhatsApp
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-full"
+                size="lg"
+              >
+                <a href="tel:+27637052631">
+                  <Phone className="mr-2" size={18} />
+                  Call Now
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

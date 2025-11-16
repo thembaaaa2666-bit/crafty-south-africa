@@ -61,9 +61,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>Phone: +27 (0) 123 456 789</li>
+              <li>Phone: 063 705 2631</li>
+              <li>WhatsApp: 071 798 4187</li>
               <li>Email: info@pleasantsolutions.co.za</li>
-              <li>South Africa</li>
+              <li>Mbombela and surrounding areas</li>
             </ul>
           </div>
         </div>

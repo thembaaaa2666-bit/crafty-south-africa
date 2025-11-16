@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Users, Shield, Clock } from "lucide-react";
+import { Award, Users, Clock } from "lucide-react";
 
 const features = [
   {
@@ -11,11 +11,6 @@ const features = [
     icon: Users,
     title: "Experienced Team",
     description: "Years of combined expertise across all trade services",
-  },
-  {
-    icon: Shield,
-    title: "Fully Insured",
-    description: "Complete peace of mind with comprehensive insurance coverage",
   },
   {
     icon: Clock,
@@ -34,7 +29,7 @@ const About = () => {
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed mb-4">
             Pleasant Solutions is a proudly South African company dedicated to providing
-            exceptional trade services to homes and businesses across the nation.
+            exceptional trade services to homes and businesses in Mbombela and surrounding areas.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             With our team of certified professionals, we specialize in plumbing, electrical work,
@@ -43,7 +38,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (

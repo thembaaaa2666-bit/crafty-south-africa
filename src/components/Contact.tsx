@@ -177,7 +177,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Service Areas</h3>
                     <p className="text-muted-foreground">
-                      Serving communities across South Africa
+                      Mbombela and surrounding areas
                     </p>
                   </div>
                 </div>

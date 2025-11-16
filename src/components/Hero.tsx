@@ -38,7 +38,7 @@ const Hero = () => {
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
             Professional plumbing, electrical, tiling, and painting services
-            delivered with excellence across South Africa.
+            delivered with excellence in Mbombela and surrounding areas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button

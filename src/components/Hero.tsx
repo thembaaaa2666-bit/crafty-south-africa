@@ -43,11 +43,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"
-              onClick={scrollToContact}
+              asChild
               className="text-lg px-8 py-6"
             >
-              <Phone className="mr-2" size={20} />
-              Get a Free Quote
+              <a href="mailto:info@pleasantsolutions.co.za">
+                <Phone className="mr-2" size={20} />
+                Get a Free Quote
+              </a>
             </Button>
             <Button
               size="lg"

@@ -38,6 +38,21 @@ const About = () => {
           </p>
         </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="text-center">
+            <div className="text-5xl font-bold text-primary mb-2">2+</div>
+            <div className="text-lg text-muted-foreground">Years of Experience</div>
+          </div>
+          <div className="text-center">
+            <div className="text-5xl font-bold text-primary mb-2">40+</div>
+            <div className="text-lg text-muted-foreground">Happy Clients</div>
+          </div>
+          <div className="text-center">
+            <div className="text-5xl font-bold text-primary mb-2">100%</div>
+            <div className="text-lg text-muted-foreground">Quality Guaranteed</div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;

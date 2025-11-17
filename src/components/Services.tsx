@@ -1,9 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Droplet, Zap, Grid3x3, Paintbrush } from "lucide-react";
-import plumbingImg from "@/assets/plumbing-service.jpg";
-import electricalImg from "@/assets/electrical-service.jpg";
-import tilingImg from "@/assets/tiling-service.jpg";
-import paintingImg from "@/assets/painting-service.jpg";
+import { Droplet, Zap, Grid3x3, Paintbrush, Sun, Leaf, Wrench } from "lucide-react";
+import plumbingImg from "@/assets/plumbing-service-new.jpg";
+import electricalImg from "@/assets/electrical-service-new.jpg";
+import tilingImg from "@/assets/tiling-service-new.jpg";
+import paintingImg from "@/assets/painting-service-new.jpg";
+import solarImg from "@/assets/solar-service.jpg";
+import gardeningImg from "@/assets/gardening-service.jpg";
+import maintenanceImg from "@/assets/maintenance-service.jpg";
 
 const services = [
   {
@@ -44,6 +47,27 @@ const services = [
     icon: Paintbrush,
     image: paintingImg,
     features: ["Interior Painting", "Exterior Painting", "Colour Consultation", "Surface Preparation"],
+  },
+  {
+    title: "Solar Panel Installations",
+    description: "Sustainable energy solutions with professional solar panel installation",
+    icon: Sun,
+    image: solarImg,
+    features: ["Solar Panel Installation", "System Design & Consultation", "Inverter Installation", "Battery Backup Systems", "Maintenance & Repairs", "Energy Audits"],
+  },
+  {
+    title: "Gardening Services",
+    description: "Professional garden maintenance and landscaping services",
+    icon: Leaf,
+    image: gardeningImg,
+    features: ["Lawn Mowing & Maintenance", "Garden Design", "Tree Trimming & Pruning", "Hedge Trimming", "Weeding & Mulching", "Seasonal Planting"],
+  },
+  {
+    title: "General Maintenance",
+    description: "Comprehensive home and property maintenance services",
+    icon: Wrench,
+    image: maintenanceImg,
+    features: ["Door & Window Repairs", "Gutter Cleaning", "Minor Repairs", "Fixture Installation", "Pressure Washing", "Property Upkeep"],
   },
 ];
 

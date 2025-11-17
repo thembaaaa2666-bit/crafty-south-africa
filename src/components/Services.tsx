@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Droplet, Zap, Grid3x3, Paintbrush, Sun, Leaf, Wrench } from "lucide-react";
+import { Droplet, Zap, Grid3x3, Paintbrush, Sun, Leaf, Wrench, HardHat, Hammer, Home, Shield, ShieldCheck } from "lucide-react";
 import plumbingImg from "@/assets/plumbing-service-new.jpg";
 import electricalImg from "@/assets/electrical-service-new.jpg";
 import tilingImg from "@/assets/tiling-service-new.jpg";
@@ -7,6 +7,11 @@ import paintingImg from "@/assets/painting-service-new.jpg";
 import solarImg from "@/assets/solar-service.jpg";
 import gardeningImg from "@/assets/gardening-service.jpg";
 import maintenanceImg from "@/assets/maintenance-service.jpg";
+import pavingImg from "@/assets/paving-service.jpg";
+import carpentryImg from "@/assets/carpentry-service.jpg";
+import ceilingImg from "@/assets/ceiling-service.jpg";
+import securityFencingImg from "@/assets/security-fencing-service.jpg";
+import securitySystemsImg from "@/assets/security-systems-service.jpg";
 
 const services = [
   {
@@ -68,6 +73,41 @@ const services = [
     icon: Wrench,
     image: maintenanceImg,
     features: ["Door & Window Repairs", "Gutter Cleaning", "Minor Repairs", "Fixture Installation", "Pressure Washing", "Property Upkeep"],
+  },
+  {
+    title: "Paving Services",
+    description: "Professional paving solutions for driveways and outdoor areas",
+    icon: HardHat,
+    image: pavingImg,
+    features: ["Driveway Paving", "Interlocking Pavers", "Concrete Paving", "Patio Paving", "Pathway Installation", "Repair & Maintenance"],
+  },
+  {
+    title: "Interior Home Carpentry",
+    description: "Custom carpentry work for all your interior needs",
+    icon: Hammer,
+    image: carpentryImg,
+    features: ["Custom Cabinetry", "Built-in Wardrobes", "Kitchen Installations", "Door & Frame Installation", "Shelving & Storage", "Furniture Repairs"],
+  },
+  {
+    title: "Ceiling Installations",
+    description: "Expert ceiling installation and repair services",
+    icon: Home,
+    image: ceilingImg,
+    features: ["Suspended Ceilings", "Ceiling Repairs", "Cornicing & Moldings", "Ceiling Insulation", "Drywall Ceilings", "Acoustic Ceilings"],
+  },
+  {
+    title: "Security Fencing",
+    description: "Durable and secure fencing solutions for your property",
+    icon: Shield,
+    image: securityFencingImg,
+    features: ["Palisade Fencing", "Electric Fencing", "Steel Fencing", "Security Gates", "Fence Repairs", "Perimeter Security"],
+  },
+  {
+    title: "Security Systems",
+    description: "Advanced security systems to protect your property",
+    icon: ShieldCheck,
+    image: securitySystemsImg,
+    features: ["CCTV Installation", "Alarm Systems", "Access Control", "24/7 Monitoring", "Motion Sensors", "Security Upgrades"],
   },
 ];
 

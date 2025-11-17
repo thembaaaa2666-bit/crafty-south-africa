@@ -108,8 +108,10 @@ const Contact = () => {
                       rows={6}
                     />
                   </div>
-                  <Button type="submit" className="w-full" size="lg">
-                    Send Message
+                  <Button asChild className="w-full" size="lg">
+                    <a href="mailto:info@pleasantsolutions.co.za">
+                      Send Message
+                    </a>
                   </Button>
                 </form>
               </CardContent>

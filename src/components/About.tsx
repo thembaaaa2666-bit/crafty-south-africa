@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Users, Clock } from "lucide-react";
+import { Award, Users, Clock, BadgeCheck } from "lucide-react";
 
 const features = [
   {
@@ -24,6 +24,10 @@ const About = () => {
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full mb-6 font-semibold">
+            <BadgeCheck className="w-5 h-5" />
+            <span>Owned by a Qualified ARTISAN - Quality & Safety Never Neglected</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             About Pleasant Solutions
           </h2>

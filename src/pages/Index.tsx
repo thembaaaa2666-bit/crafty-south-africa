@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <FloatingContactButtons />
     </div>
   );
 };

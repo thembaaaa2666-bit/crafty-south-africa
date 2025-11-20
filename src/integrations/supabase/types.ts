@@ -14,7 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      applicants: {
+        Row: {
+          created_at: string
+          cv_file_path: string | null
+          email: string
+          experience_years: number | null
+          full_name: string
+          id: string
+          message: string | null
+          phone: string
+          service_category: string
+        }
+        Insert: {
+          created_at?: string
+          cv_file_path?: string | null
+          email: string
+          experience_years?: number | null
+          full_name: string
+          id?: string
+          message?: string | null
+          phone: string
+          service_category: string
+        }
+        Update: {
+          created_at?: string
+          cv_file_path?: string | null
+          email?: string
+          experience_years?: number | null
+          full_name?: string
+          id?: string
+          message?: string | null
+          phone?: string
+          service_category?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

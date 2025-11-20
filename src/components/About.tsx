@@ -45,12 +45,21 @@ const About = () => {
         <Card className="max-w-4xl mx-auto mb-16 bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
           <CardContent className="pt-8 pb-8">
             <p className="text-xl md:text-2xl font-semibold text-center leading-relaxed mb-4">
-              We treat our customers with respect and reverence
+              We Value Integrity
             </p>
-            <p className="text-lg text-center text-muted-foreground leading-relaxed">
-              We&apos;re not about money - we&apos;re about serving people. We are here to serve, 
-              so don&apos;t hesitate to call us today!
+            <p className="text-lg text-center text-muted-foreground leading-relaxed mb-6">
+              Being honest and willing to do right is at the heart of everything we do. 
+              Our company desires that everything be done decently and in order, as all things should be done!
             </p>
+            <div className="border-t border-primary/20 pt-6 mt-6">
+              <p className="text-xl md:text-2xl font-semibold text-center leading-relaxed mb-4">
+                We treat our customers with respect and reverence
+              </p>
+              <p className="text-lg text-center text-muted-foreground leading-relaxed">
+                We&apos;re not about money - we&apos;re about serving people. We are here to serve, 
+                so don&apos;t hesitate to call us today!
+              </p>
+            </div>
           </CardContent>
         </Card>
 

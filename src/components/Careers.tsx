@@ -240,8 +240,10 @@ const Careers = () => {
               </div>
             </div>
 
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
-              {isSubmitting ? "Submitting..." : "Submit Application"}
+            <Button asChild className="w-full" size="lg">
+              <a href="mailto:info@pleasantsolutions.co.za">
+                Submit Application
+              </a>
             </Button>
           </form>
         </Card>

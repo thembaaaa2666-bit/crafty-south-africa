@@ -2,7 +2,7 @@ import { Phone, MessageCircle } from "lucide-react";
 
 const FloatingContactButtons = () => {
   const whatsappNumber = "27717984187"; // 071 798 4187 in international format
-  const phoneNumber = "0717984187";
+  const phoneNumber = "0637052631";
 
   return (
     <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">

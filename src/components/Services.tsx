@@ -122,6 +122,17 @@ const Services = () => {
           </p>
         </div>
 
+        <div className="max-w-5xl mx-auto mb-12 text-center">
+          <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
+            <span className="text-foreground">South Africans, we are here for you!</span>
+            <br />
+            <span className="text-foreground">We desire to serve you </span>
+            <span className="text-primary font-black">PLEASANTLY</span>
+            <br />
+            <span className="text-foreground">if you give us the opportunity!!!</span>
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;

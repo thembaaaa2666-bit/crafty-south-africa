@@ -24,10 +24,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32">
         <div className="max-w-3xl">
-          <div className="mb-6">
-            <span className="inline-block px-4 py-2 bg-secondary/20 text-secondary-foreground rounded-full text-sm font-semibold mb-4">
+          <div className="mb-6 flex flex-col gap-3">
+            <span className="inline-block px-4 py-2 bg-secondary/20 text-secondary-foreground rounded-full text-sm font-semibold w-fit">
               🇿🇦 Proudly South African
             </span>
+            <div className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg shadow-lg w-fit animate-pulse">
+              <span className="text-lg md:text-xl font-black">
+                🎉 35% DISCOUNT for all first-time customers — ALL YEAR ROUND on ANY project!
+              </span>
+            </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Your Trusted{" "}

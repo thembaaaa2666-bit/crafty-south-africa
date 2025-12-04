@@ -33,6 +33,11 @@ const Hero = () => {
                 🎉 35% DISCOUNT for all first-time customers — ALL YEAR ROUND on ANY project!
               </span>
             </div>
+            <div className="inline-block px-5 py-2.5 bg-accent/90 text-accent-foreground rounded-lg shadow-md w-fit border-2 border-accent">
+              <span className="text-base md:text-lg font-bold">
+                💪 We value ALL customers — no project is too big or too small!
+              </span>
+            </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Your Trusted{" "}

@@ -38,6 +38,11 @@ const Hero = () => {
                 💪 We value ALL customers — no project is too big or too small!
               </span>
             </div>
+            <div className="inline-block px-5 py-2.5 bg-secondary text-secondary-foreground rounded-lg shadow-md w-fit border-2 border-secondary-foreground/20">
+              <span className="text-base md:text-lg font-bold">
+                🏆 NHBRC Accredited
+              </span>
+            </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Your Trusted{" "}

@@ -1,113 +1,90 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import { Phone, ArrowRight, ShieldCheck, Clock, Award } from "lucide-react";
+import heroImage from "@/assets/ps-hero.jpg";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
+  const scrollTo = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden bg-background"
     >
-      {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Professional plumber installing chrome pipes"
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-32">
-        <div className="max-w-3xl">
-          <div className="mb-6 flex flex-col gap-3">
-            <span className="inline-block px-4 py-2 bg-secondary/20 text-secondary-foreground rounded-full text-sm font-semibold w-fit">
-              🇿🇦 Proudly South African
+      <div className="relative z-10 container mx-auto px-4 py-32 lg:py-40">
+        <div className="max-w-3xl animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-8">
+            <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
+            <span className="text-xs font-medium tracking-[0.2em] uppercase text-gold">
+              Mbombela • NHBRC Accredited
             </span>
-            <div className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg shadow-lg w-fit animate-pulse">
-              <span className="text-lg md:text-xl font-black">
-                🎉 35% DISCOUNT for all first-time customers — ALL YEAR ROUND on ANY project!
-              </span>
-            </div>
-            <div className="inline-block px-5 py-2.5 bg-accent/90 text-accent-foreground rounded-lg shadow-md w-fit border-2 border-accent">
-              <span className="text-base md:text-lg font-bold">
-                💪 We value ALL customers — no project is too big or too small!
-              </span>
-            </div>
-            <div className="inline-block px-5 py-2.5 bg-secondary text-secondary-foreground rounded-lg shadow-md w-fit border-2 border-secondary-foreground/20">
-              <span className="text-base md:text-lg font-bold">
-                🏆 NHBRC Accredited
-              </span>
-            </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Your Trusted{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Home Solutions
-            </span>{" "}
-            Partner
+
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-6">
+            Professional <br />
+            <span className="gradient-text-gold">Plumbing & Drain</span>
+            <br />
+            Specialists
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            Professional plumbing, electrical, tiling, and painting services
-            delivered with excellence in Mbombela and surrounding areas.
+
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
+            Reliable plumbing installations, repairs, and drain solutions for
+            homes and businesses across Mbombela and surrounding areas.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button
               size="lg"
-              asChild
-              className="text-lg px-8 py-6"
+              onClick={() => scrollTo("contact")}
+              className="gradient-gold text-primary-foreground hover:opacity-90 shadow-gold h-14 px-8 text-base group"
             >
-              <a href="mailto:info@pleasantsolutions.co.za">
-                <Phone className="mr-2" size={20} />
-                Get a Free Quote
-              </a>
+              Get Free Quote
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              onClick={() => {
-                const element = document.getElementById("services");
-                element?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="text-lg px-8 py-6"
-            >
-              View Services
-            </Button>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button
-              size="lg"
-              variant="secondary"
               asChild
-              className="text-lg px-8 py-6"
-            >
-              <a
-                href="https://wa.me/27717984187"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MessageCircle className="mr-2" size={20} />
-                WhatsApp Us
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="secondary"
-              asChild
-              className="text-lg px-8 py-6"
+              className="h-14 px-8 text-base border-gold/40 text-foreground hover:bg-gold/10 hover:text-gold hover:border-gold"
             >
               <a href="tel:+27637052631">
-                <Phone className="mr-2" size={20} />
-                Call Now
+                <Phone className="w-4 h-4" />
+                Call Now — 063 705 2631
               </a>
             </Button>
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-8 border-t border-border/50 max-w-2xl">
+            {[
+              { icon: Clock, label: "24/7 Emergency" },
+              { icon: ShieldCheck, label: "Licensed & Insured" },
+              { icon: Award, label: "NHBRC Accredited" },
+            ].map((item) => (
+              <div key={item.label} className="flex items-center gap-3">
+                <item.icon className="w-5 h-5 text-gold shrink-0" />
+                <span className="text-xs sm:text-sm font-medium text-foreground/80">
+                  {item.label}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {/* Bottom gold accent line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
     </section>
   );
 };

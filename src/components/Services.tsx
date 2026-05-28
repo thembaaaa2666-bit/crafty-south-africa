@@ -1,175 +1,87 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Droplet, Zap, Grid3x3, Paintbrush, Sun, Leaf, Wrench, HardHat, Hammer, Home, Shield, ShieldCheck } from "lucide-react";
-import plumbingImg from "@/assets/plumbing-service-new.jpg";
-import electricalImg from "@/assets/electrical-service-new.jpg";
-import tilingImg from "@/assets/tiling-service-new.jpg";
-import paintingImg from "@/assets/painting-service-new.jpg";
-import solarImg from "@/assets/solar-service.jpg";
-import gardeningImg from "@/assets/gardening-service.jpg";
-import maintenanceImg from "@/assets/maintenance-service.jpg";
-import pavingImg from "@/assets/paving-service.jpg";
-import carpentryImg from "@/assets/carpentry-service.jpg";
-import ceilingImg from "@/assets/ceiling-service.jpg";
-import securityFencingImg from "@/assets/security-fencing-service.jpg";
-import securitySystemsImg from "@/assets/security-systems-service.jpg";
+import { Button } from "@/components/ui/button";
+import {
+  Droplets,
+  Wrench,
+  Hammer,
+  ShowerHead,
+  Search,
+  PipetteIcon,
+  Cog,
+  Bath,
+  ChefHat,
+  Waves,
+  ArrowRight,
+} from "lucide-react";
 
 const services = [
-  {
-    title: "Plumbing Services",
-    description: "Expert plumbing solutions for residential and commercial properties",
-    icon: Droplet,
-    image: plumbingImg,
-    features: [
-      "Geyser Installation & Repair",
-      "Leak Detection & Repair", 
-      "Toilet & Basin Installation",
-      "Shower & Bath Installation",
-      "Blocked Drains & Cleaning",
-      "Pipe Installation & Repairs",
-      "Tap Repairs & Replacements",
-      "Burst Pipe Emergency Repairs",
-      "Water Heater Services",
-      "Sewer Line Repairs"
-    ],
-  },
-  {
-    title: "Electrical Services",
-    description: "Safe and certified electrical installations and repairs",
-    icon: Zap,
-    image: electricalImg,
-    features: ["Wiring & Rewiring", "Panel Upgrades", "Lighting Installation", "Safety Inspections"],
-  },
-  {
-    title: "Tiling Services",
-    description: "Professional tiling for floors, walls, and outdoor spaces",
-    icon: Grid3x3,
-    image: tilingImg,
-    features: ["Floor Tiling", "Wall Tiling", "Bathroom Renovations", "Custom Designs"],
-  },
-  {
-    title: "Painting Services",
-    description: "Quality interior and exterior painting with attention to detail",
-    icon: Paintbrush,
-    image: paintingImg,
-    features: ["Interior Painting", "Exterior Painting", "Colour Consultation", "Surface Preparation"],
-  },
-  {
-    title: "Solar Panel Installations",
-    description: "Sustainable energy solutions with professional solar panel installation",
-    icon: Sun,
-    image: solarImg,
-    features: ["Solar Panel Installation", "System Design & Consultation", "Inverter Installation", "Battery Backup Systems", "Maintenance & Repairs", "Energy Audits"],
-  },
-  {
-    title: "Gardening Services",
-    description: "Professional garden maintenance and landscaping services",
-    icon: Leaf,
-    image: gardeningImg,
-    features: ["Lawn Mowing & Maintenance", "Garden Design", "Tree Trimming & Pruning", "Hedge Trimming", "Weeding & Mulching", "Seasonal Planting"],
-  },
-  {
-    title: "General Maintenance",
-    description: "Comprehensive home and property maintenance services",
-    icon: Wrench,
-    image: maintenanceImg,
-    features: ["Door & Window Repairs", "Gutter Cleaning", "Minor Repairs", "Fixture Installation", "Pressure Washing", "Property Upkeep"],
-  },
-  {
-    title: "Paving Services",
-    description: "Professional paving solutions for driveways and outdoor areas",
-    icon: HardHat,
-    image: pavingImg,
-    features: ["Driveway Paving", "Interlocking Pavers", "Concrete Paving", "Patio Paving", "Pathway Installation", "Repair & Maintenance"],
-  },
-  {
-    title: "Interior Home Carpentry",
-    description: "Custom carpentry work for all your interior needs",
-    icon: Hammer,
-    image: carpentryImg,
-    features: ["Custom Cabinetry", "Built-in Wardrobes", "Kitchen Installations", "Door & Frame Installation", "Shelving & Storage", "Furniture Repairs"],
-  },
-  {
-    title: "Ceiling Installations",
-    description: "Expert ceiling installation and repair services",
-    icon: Home,
-    image: ceilingImg,
-    features: ["Suspended Ceilings", "Ceiling Repairs", "Cornicing & Moldings", "Ceiling Insulation", "Drywall Ceilings", "Acoustic Ceilings"],
-  },
-  {
-    title: "Security Fencing",
-    description: "Durable and secure fencing solutions for your property",
-    icon: Shield,
-    image: securityFencingImg,
-    features: ["Palisade Fencing", "Electric Fencing", "Steel Fencing", "Security Gates", "Fence Repairs", "Perimeter Security"],
-  },
-  {
-    title: "Security Systems",
-    description: "Advanced security systems to protect your property",
-    icon: ShieldCheck,
-    image: securitySystemsImg,
-    features: ["CCTV Installation", "Alarm Systems", "Access Control", "24/7 Monitoring", "Motion Sensors", "Security Upgrades"],
-  },
+  { icon: Droplets, title: "Drain Unblocking", description: "High-pressure drain clearing for stubborn blockages — kitchen, bathroom, sewer." },
+  { icon: Wrench, title: "Plumbing Installations", description: "Full plumbing systems for new builds, renovations and extensions." },
+  { icon: Hammer, title: "Plumbing Repairs", description: "Fast, reliable repairs for burst pipes, faulty fittings and worn-out fixtures." },
+  { icon: ShowerHead, title: "Toilet Repairs", description: "Cisterns, seals, flushes, blockages and full toilet replacements." },
+  { icon: Search, title: "Leak Detection & Repairs", description: "Non-invasive leak detection that saves your walls, floors and water bills." },
+  { icon: PipetteIcon, title: "Pipe Replacements", description: "Copper, PVC and PEX pipe replacement with neat, durable workmanship." },
+  { icon: Cog, title: "Sink & Tap Installations", description: "Premium taps, mixers and basins installed to manufacturer specification." },
+  { icon: Bath, title: "Bathroom Plumbing", description: "Showers, baths, basins, geysers — full bathroom plumbing solutions." },
+  { icon: ChefHat, title: "Kitchen Plumbing", description: "Dishwashers, sinks, instant boilers and undersink work done right." },
+  { icon: Waves, title: "Sewer Line Cleaning", description: "Mainline cleaning, root removal and CCTV sewer inspections." },
 ];
 
 const Services = () => {
+  const scrollToContact = () =>
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+
   return (
-    <section id="services" className="py-24 bg-muted/30">
+    <section id="services" className="relative py-24 lg:py-32 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive home improvement solutions delivered by skilled professionals
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="text-xs font-medium tracking-[0.3em] uppercase text-gold mb-4">
+            — Our Services
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            Complete plumbing & <span className="gradient-text-gold">drain solutions</span>
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Residential and commercial plumbing services delivered by skilled
+            technicians with modern equipment. Every job, big or small.
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto mb-12 text-center">
-          <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-            <span className="text-foreground">South Africans, we are here for you!</span>
-            <br />
-            <span className="text-foreground">We desire to serve you </span>
-            <span className="text-primary font-black">PLEASANTLY</span>
-            <br />
-            <span className="text-foreground">if you give us the opportunity!!!</span>
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-px bg-border rounded-lg overflow-hidden">
+          {services.map((service) => {
             const Icon = service.icon;
             return (
-              <Card
-                key={index}
-                className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              <div
+                key={service.title}
+                className="group relative bg-card p-8 hover:bg-secondary/50 transition-all duration-500 cursor-pointer"
+                onClick={scrollToContact}
               >
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground p-3 rounded-full">
-                    <Icon size={24} />
-                  </div>
+                <div className="w-14 h-14 rounded-md border border-gold/30 bg-gold/5 flex items-center justify-center mb-5 group-hover:border-gold group-hover:bg-gold/10 group-hover:shadow-gold transition-all">
+                  <Icon className="w-6 h-6 text-gold" strokeWidth={1.8} />
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
-                  <CardDescription className="text-base">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-muted-foreground">
-                        <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-gold transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5 min-h-[60px]">
+                  {service.description}
+                </p>
+                <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  Learn More <ArrowRight className="w-3 h-3" />
+                </div>
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
             );
           })}
+        </div>
+
+        <div className="text-center mt-16">
+          <Button
+            size="lg"
+            onClick={scrollToContact}
+            className="gradient-gold text-primary-foreground hover:opacity-90 shadow-gold h-14 px-10"
+          >
+            Request a Free Quote
+            <ArrowRight className="w-4 h-4" />
+          </Button>
         </div>
       </div>
     </section>

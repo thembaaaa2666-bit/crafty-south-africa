@@ -1,101 +1,74 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Award, Users, Clock, BadgeCheck } from "lucide-react";
+import { BadgeCheck } from "lucide-react";
+import aboutImage from "@/assets/ps-gallery-1.jpg";
 
-const features = [
-  {
-    icon: Award,
-    title: "Quality Workmanship",
-    description: "Certified professionals delivering excellence in every project",
-  },
-  {
-    icon: Users,
-    title: "Experienced Team",
-    description: "Years of combined expertise across all trade services",
-  },
-  {
-    icon: Clock,
-    title: "Reliable Service",
-    description: "On-time delivery and responsive customer support",
-  },
+const stats = [
+  { value: "500+", label: "Projects Completed" },
+  { value: "24/7", label: "Emergency Response" },
+  { value: "100%", label: "Workmanship Guaranteed" },
+  { value: "NHBRC", label: "Accredited Specialists" },
 ];
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="relative py-24 lg:py-32 bg-background overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full mb-6 font-semibold">
-            <BadgeCheck className="w-5 h-5" />
-            <span>Owned by a Qualified ARTISAN - Quality & Safety Never Neglected</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            About Pleasant Solutions
-          </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed mb-4">
-            Pleasant Solutions is a proudly South African company dedicated to providing
-            exceptional trade services to homes and businesses in Mbombela and surrounding areas.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            With our team of certified professionals, we specialize in plumbing, electrical work,
-            tiling, and painting services. Our commitment to quality, safety, and customer
-            satisfaction has made us a trusted partner for all your home improvement needs.
-          </p>
-        </div>
-
-        <Card className="max-w-4xl mx-auto mb-16 bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
-          <CardContent className="pt-8 pb-8">
-            <p className="text-xl md:text-2xl font-semibold text-center leading-relaxed mb-4">
-              We Value Integrity
-            </p>
-            <p className="text-lg text-center text-muted-foreground leading-relaxed mb-6">
-              Being honest and willing to do right is at the heart of everything we do. 
-              Our company desires that everything be done decently and in order, as all things should be done!
-            </p>
-            <div className="border-t border-primary/20 pt-6 mt-6">
-              <p className="text-xl md:text-2xl font-semibold text-center leading-relaxed mb-4">
-                We treat our customers with respect and reverence
-              </p>
-              <p className="text-lg text-center text-muted-foreground leading-relaxed">
-                We&apos;re not about money - we&apos;re about serving people. We are here to serve, 
-                so don&apos;t hesitate to call us today!
-              </p>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="relative order-2 lg:order-1">
+            <div className="absolute -top-6 -left-6 w-24 h-24 border-l-2 border-t-2 border-gold/60" />
+            <div className="absolute -bottom-6 -right-6 w-24 h-24 border-r-2 border-b-2 border-gold/60" />
+            <img
+              src={aboutImage}
+              alt="Precision plumbing equipment and chrome pipes"
+              className="relative w-full h-[500px] object-cover rounded-md shadow-elegant"
+              loading="lazy"
+              width={1024}
+              height={1024}
+            />
+            <div className="absolute -bottom-8 left-8 right-8 bg-card border border-gold/30 rounded-md p-6 shadow-gold hidden md:block">
+              <div className="flex items-center gap-3">
+                <BadgeCheck className="w-8 h-8 text-gold shrink-0" />
+                <div>
+                  <div className="font-display text-lg font-bold">Qualified Artisans</div>
+                  <div className="text-xs text-muted-foreground">Owned and operated by certified professionals</div>
+                </div>
+              </div>
             </div>
-          </CardContent>
-        </Card>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <div className="text-center">
-            <div className="text-5xl font-bold text-primary mb-2">2+</div>
-            <div className="text-lg text-muted-foreground">Years of Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-5xl font-bold text-primary mb-2">40+</div>
-            <div className="text-lg text-muted-foreground">Happy Clients</div>
-          </div>
-          <div className="text-center">
-            <div className="text-5xl font-bold text-primary mb-2">100%</div>
-            <div className="text-lg text-muted-foreground">Quality Guaranteed</div>
-          </div>
-        </div>
+          <div className="order-1 lg:order-2">
+            <div className="text-xs font-medium tracking-[0.3em] uppercase text-gold mb-4">
+              — About Pleasant Solutions
+            </div>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              South Africa's trusted <span className="gradient-text-gold">plumbing experts</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-5">
+              Pleasant Solutions is a proudly South African plumbing and drain
+              specialist company serving Mbombela and surrounding areas. We
+              combine quality workmanship with modern equipment to deliver
+              reliable, affordable, and professional service — every time.
+            </p>
+            <p className="text-base text-muted-foreground leading-relaxed mb-10">
+              From emergency drain unblocking to full bathroom and kitchen
+              installations, our skilled technicians arrive on time, work clean,
+              and leave your space better than we found it. Big or small, we
+              solve it all.
+            </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <Card
-                key={index}
-                className="text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <CardContent className="pt-8 pb-6">
-                  <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                    <Icon className="text-primary" size={32} />
+            <div className="grid grid-cols-2 gap-6">
+              {stats.map((stat) => (
+                <div key={stat.label} className="border-l-2 border-gold pl-4">
+                  <div className="font-display text-3xl md:text-4xl font-bold text-gold mb-1">
+                    {stat.value}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
-                </CardContent>
-              </Card>
-            );
-          })}
+                  <div className="text-xs uppercase tracking-wider text-muted-foreground">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

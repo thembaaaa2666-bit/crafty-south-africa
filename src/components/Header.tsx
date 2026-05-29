@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Droplets } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
+import logo from "@/assets/pleasant-solutions-logo.png";
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -42,9 +43,11 @@ const Header = () => {
             onClick={() => scrollToSection("home")}
             className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 rounded-md gradient-gold flex items-center justify-center shadow-gold group-hover:scale-105 transition-transform">
-              <Droplets className="w-5 h-5 text-primary-foreground" strokeWidth={2.5} />
-            </div>
+            <img
+              src={logo}
+              alt="Pleasant Solutions logo"
+              className="w-12 h-12 rounded-full object-contain shadow-gold group-hover:scale-105 transition-transform"
+            />
             <div className="text-left">
               <div className="text-base md:text-lg font-display font-bold tracking-tight leading-none">
                 Pleasant <span className="text-gold">Solutions</span>

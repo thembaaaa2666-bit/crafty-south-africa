@@ -2,7 +2,7 @@ import { BadgeCheck } from "lucide-react";
 import aboutImage from "@/assets/ps-gallery-1.jpg";
 
 const stats = [
-  { value: "500+", label: "Projects Completed" },
+  { value: "80+", label: "Happy Clients" },
   { value: "24/7", label: "Emergency Response" },
   { value: "100%", label: "Workmanship Guaranteed" },
   { value: "NHBRC", label: "Accredited Specialists" },

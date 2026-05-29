@@ -31,8 +31,8 @@ const Contact = () => {
   ) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const contactInfo = [
-    { icon: Phone, label: "Phone", value: "063 705 2631", href: "tel:+27637052631" },
-    { icon: MessageCircle, label: "WhatsApp", value: "071 798 4187", href: "https://wa.me/27717984187" },
+    { icon: Phone, label: "Call or WhatsApp", value: "063 705 2631", href: "tel:+27637052631" },
+    { icon: MessageCircle, label: "WhatsApp", value: "063 705 2631", href: "https://wa.me/27637052631" },
     { icon: Mail, label: "Email", value: "info@pleasantsolutions.co.za", href: "mailto:info@pleasantsolutions.co.za" },
     { icon: MapPin, label: "Service Area", value: "Mbombela Municipality" },
     { icon: Clock, label: "Hours", value: "Mon–Sat 7:00–19:00 · 24/7 Emergency" },

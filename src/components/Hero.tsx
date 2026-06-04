@@ -33,15 +33,16 @@ const Hero = () => {
           </div>
 
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-6">
-            Professional <br />
-            <span className="gradient-text-gold">Plumbing & Drain</span>
+            Specialists in <br />
+            <span className="gradient-text-gold">Drains, Plumbing</span>
             <br />
-            Specialists
+            & Gardening
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-            Reliable plumbing installations, repairs, and drain solutions for
-            homes and businesses across Mbombela and surrounding areas.
+            We specialize in drain unblocking, plumbing installations & repairs,
+            and professional gardening services for homes and businesses across
+            Mbombela and surrounding areas.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">

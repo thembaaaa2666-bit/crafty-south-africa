@@ -10,6 +10,7 @@ import {
   Bath,
   ChefHat,
   Waves,
+  Camera,
   Leaf,
   ArrowRight,
 } from "lucide-react";
@@ -25,6 +26,7 @@ const services = [
   { icon: Bath, title: "Bathroom Plumbing", description: "Showers, baths, basins, geysers — full bathroom plumbing solutions." },
   { icon: ChefHat, title: "Kitchen Plumbing", description: "Dishwashers, sinks, instant boilers and undersink work done right." },
   { icon: Waves, title: "Sewer Line Cleaning", description: "Mainline cleaning, root removal and CCTV sewer inspections." },
+  { icon: Camera, title: "Drain CCTV Inspections", description: "High-definition CCTV drain inspection camera surveys to identify blockages, cracks and damage without excavation." },
   { icon: Leaf, title: "Gardening Services", description: "Garden maintenance, lawn care, hedge trimming and tidy-ups for homes & businesses." },
 ];
 

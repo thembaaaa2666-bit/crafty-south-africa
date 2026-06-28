@@ -10,6 +10,7 @@ import {
   Bath,
   ChefHat,
   Waves,
+  Camera,
   Leaf,
   ArrowRight,
 } from "lucide-react";

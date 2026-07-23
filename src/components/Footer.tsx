@@ -18,8 +18,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6 max-w-sm">
-              South Africa's trusted plumbing and drain specialists. Proudly
-              serving Mbombela and surrounding areas.
+              Your trusted partner for plumbing, drainage, property
+              maintenance and basic welding & metal repairs — proudly serving
+              Mbombela and surrounding areas.
             </p>
             <div className="font-display text-lg italic gradient-text-gold">
               "Big or small, we solve it all."

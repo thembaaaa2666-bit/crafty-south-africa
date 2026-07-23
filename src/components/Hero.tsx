@@ -40,9 +40,9 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-            We specialize in drain unblocking, plumbing installations & repairs,
-            and professional gardening services for homes and businesses across
-            Mbombela and surrounding areas.
+            From plumbing and drainage to property maintenance, basic welding
+            and metal repairs, and gardening — one reliable partner keeping
+            your property functional, safe and well maintained across Mbombela.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">

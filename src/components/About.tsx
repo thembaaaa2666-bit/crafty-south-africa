@@ -44,16 +44,18 @@ const About = () => {
               South Africa's trusted <span className="gradient-text-gold">plumbing experts</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-              Pleasant Solutions is a proudly South African plumbing and drain
-              specialist company serving Mbombela and surrounding areas. We
-              combine quality workmanship with modern equipment to deliver
-              reliable, affordable, and professional service — every time.
+              Pleasant Solutions is a proudly South African plumbing and
+              property maintenance company serving residential, commercial,
+              industrial and public-sector clients across Mbombela and
+              surrounding areas of Mpumalanga. We combine practical trade
+              experience with modern equipment to deliver reliable, affordable
+              and professional service — every time.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed mb-10">
-              From emergency drain unblocking to full bathroom and kitchen
-              installations, our skilled technicians arrive on time, work clean,
-              and leave your space better than we found it. Big or small, we
-              solve it all.
+              From emergency drain unblocking and full plumbing installations
+              to basic welding, metal repairs, gardening and grounds care —
+              one property, multiple maintenance needs, one trusted partner.
+              Big or small, we solve it all.
             </p>
 
             <div className="grid grid-cols-2 gap-6">

@@ -33,6 +33,7 @@ const Footer = () => {
               {[
                 { id: "home", label: "Home" },
                 { id: "about", label: "About" },
+                { id: "accreditations", label: "Accreditations" },
                 { id: "services", label: "Services" },
                 { id: "pricing", label: "Pricing" },
                 { id: "gallery", label: "Gallery" },

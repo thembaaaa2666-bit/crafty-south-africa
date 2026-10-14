@@ -1,0 +1,3 @@
+# Project rules
+- Keep accreditation presentation in a dedicated homepage section and derive organization artwork from company-supplied assets; this keeps credentials distinct from service claims.
+- Use the shared dialog and buttons for gallery image viewing, and store supplied media as Lovable Assets pointers; this preserves originals and provides accessible viewing without duplicating binary files.

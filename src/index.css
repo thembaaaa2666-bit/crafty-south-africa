@@ -49,6 +49,7 @@ All colors MUST be HSL.
     --shadow-gold: 0 10px 40px -10px hsl(42 70% 55% / 0.4);
     --shadow-elegant: 0 20px 60px -15px hsl(0 0% 0% / 0.7);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --accreditation-logo-surface: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -120,6 +121,9 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  .accreditation-logo-surface {
+    background-color: hsl(var(--accreditation-logo-surface));
+  }
   .text-gold {
     color: hsl(var(--gold));
   }

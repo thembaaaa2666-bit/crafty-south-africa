@@ -1,6 +1,6 @@
 import { ShieldCheck } from "lucide-react";
-import nhbrc from "@/assets/accreditation-nhbrc.jpg.asset.json";
-import iopsa from "@/assets/accreditation-iopsa.jpg.asset.json";
+import nhbrc from "@/assets/accreditation-nhbrc-clean.jpg.asset.json";
+import iopsa from "@/assets/accreditation-iopsa-clean.jpg.asset.json";
 import pirb from "@/assets/accreditation-pirb.jpg.asset.json";
 
 const accreditations = [

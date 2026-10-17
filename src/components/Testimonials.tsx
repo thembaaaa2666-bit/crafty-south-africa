@@ -24,7 +24,7 @@ const testimonials = [
   {
     name: "Anne Botha",
     location: "Barberton",
-    text: "Leak detection was non-invasive and accurate. Fixed in one visit. Saved me thousands in unnecessary wall damage. Outstanding service.",
+    text: "Our kitchen taps and sink had been leaking for weeks. Fixed in one visit, neatly, and the price was exactly what they quoted. Outstanding service.",
   },
   {
     name: "Mandla Nkosi",

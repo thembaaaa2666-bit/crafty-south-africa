@@ -4,13 +4,11 @@ import {
   Wrench,
   Hammer,
   ShowerHead,
-  Search,
   Pipette,
   Cog,
   Bath,
   ChefHat,
   Waves,
-  Camera,
   Leaf,
   Flame,
   ArrowRight,
@@ -21,13 +19,11 @@ const services = [
   { icon: Wrench, title: "Plumbing Installations", description: "Full plumbing systems for new builds, renovations and extensions." },
   { icon: Hammer, title: "Plumbing Repairs", description: "Fast, reliable repairs for burst pipes, faulty fittings and worn-out fixtures." },
   { icon: ShowerHead, title: "Toilet Repairs", description: "Cisterns, seals, flushes, blockages and full toilet replacements." },
-  { icon: Search, title: "Leak Detection & Repairs", description: "Non-invasive leak detection that saves your walls, floors and water bills." },
   { icon: Pipette, title: "Pipe Replacements", description: "Copper, PVC and PEX pipe replacement with neat, durable workmanship." },
   { icon: Cog, title: "Sink & Tap Installations", description: "Premium taps, mixers and basins installed to manufacturer specification." },
   { icon: Bath, title: "Bathroom Plumbing", description: "Showers, baths, basins, geysers — full bathroom plumbing solutions." },
   { icon: ChefHat, title: "Kitchen Plumbing", description: "Dishwashers, sinks, instant boilers and undersink work done right." },
-  { icon: Waves, title: "Sewer Line Cleaning", description: "Mainline cleaning, root removal and CCTV sewer inspections." },
-  { icon: Camera, title: "Drain CCTV Inspections", description: "High-definition CCTV drain inspection camera surveys to identify blockages, cracks and damage without excavation." },
+  { icon: Waves, title: "Sewer Line Cleaning", description: "Mainline cleaning, root removal and high-pressure flushing for free-flowing drains." },
   { icon: Flame, title: "Basic Welding & Metal Repairs", description: "Practical welding and metal repairs for gates, hinges, brackets, frames, fencing and general property maintenance needs." },
   { icon: Leaf, title: "Gardening Services", description: "Garden maintenance, lawn care, hedge trimming and tidy-ups for homes & businesses." },
 ];
@@ -52,26 +48,33 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-px bg-border rounded-lg overflow-hidden">
-          {services.map((service) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-px bg-border rounded-lg overflow-hidden">
+          {services.map((service, i) => {
             const Icon = service.icon;
+            const isLast = i === services.length - 1;
             return (
               <div
                 key={service.title}
-                className="group relative bg-card p-8 hover:bg-secondary/50 transition-all duration-500 cursor-pointer"
+                className={`group relative bg-card p-8 hover:bg-secondary/50 transition-all duration-500 cursor-pointer ${
+                  isLast ? "sm:col-span-2 flex items-center gap-8" : ""
+                }`}
                 onClick={scrollToContact}
               >
-                <div className="w-14 h-14 rounded-md border border-gold/30 bg-gold/5 flex items-center justify-center mb-5 group-hover:border-gold group-hover:bg-gold/10 group-hover:shadow-gold transition-all">
+                <div className={`w-14 h-14 shrink-0 rounded-md border border-gold/30 bg-gold/5 flex items-center justify-center group-hover:border-gold group-hover:bg-gold/10 group-hover:shadow-gold transition-all ${isLast ? "" : "mb-5"}`}>
                   <Icon className="w-6 h-6 text-gold" strokeWidth={1.8} />
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-gold transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5 min-h-[60px]">
-                  {service.description}
-                </p>
-                <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  Learn More <ArrowRight className="w-3 h-3" />
+                <div className={isLast ? "flex-1" : ""}>
+                  <h3 className="font-display text-xl font-bold mb-3 group-hover:text-gold transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className={`text-sm text-muted-foreground leading-relaxed ${isLast ? "" : "mb-5 min-h-[60px]"}`}>
+                    {service.description}
+                  </p>
+                  {!isLast && (
+                    <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                      Learn More <ArrowRight className="w-3 h-3" />
+                    </div>
+                  )}
                 </div>
                 <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>

@@ -48,26 +48,31 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-px bg-border rounded-lg overflow-hidden">
-          {services.map((service) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-px bg-border rounded-lg overflow-hidden">
+          {services.map((service, i) => {
             const Icon = service.icon;
+            const isLast = i === services.length - 1;
             return (
               <div
                 key={service.title}
-                className="group relative flex-1 min-w-[220px] bg-card p-8 hover:bg-secondary/50 transition-all duration-500 cursor-pointer"
+                className={`group relative bg-card p-8 hover:bg-secondary/50 transition-all duration-500 cursor-pointer ${
+                  isLast ? "sm:col-span-2 flex items-center gap-8" : ""
+                }`}
                 onClick={scrollToContact}
               >
-                <div className="w-14 h-14 rounded-md border border-gold/30 bg-gold/5 flex items-center justify-center mb-5 group-hover:border-gold group-hover:bg-gold/10 group-hover:shadow-gold transition-all">
+                <div className="w-14 h-14 shrink-0 rounded-md border border-gold/30 bg-gold/5 flex items-center justify-center mb-5 group-hover:border-gold group-hover:bg-gold/10 group-hover:shadow-gold transition-all">
                   <Icon className="w-6 h-6 text-gold" strokeWidth={1.8} />
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-gold transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5 min-h-[60px]">
-                  {service.description}
-                </p>
-                <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  Learn More <ArrowRight className="w-3 h-3" />
+                <div className={isLast ? "flex-1" : ""}>
+                  <h3 className="font-display text-xl font-bold mb-3 group-hover:text-gold transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-5 min-h-[60px]">
+                    {service.description}
+                  </p>
+                  <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                    Learn More <ArrowRight className="w-3 h-3" />
+                  </div>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>

@@ -3,7 +3,7 @@ import { Wrench, Zap, Cog, Wallet, Sparkles, ShieldCheck, Building2 } from "luci
 const reasons = [
   { icon: Wrench, title: "Skilled Technicians", description: "Certified plumbers with years of hands-on experience across South Africa." },
   { icon: Zap, title: "Fast Response", description: "Same-day callouts and 24/7 emergency plumbing across Mbombela." },
-  { icon: Cog, title: "Professional Equipment", description: "Modern leak-detection, jet-rodders and CCTV inspection technology." },
+  { icon: Cog, title: "Professional Equipment", description: "Modern jet-rodders, high-pressure gear and quality plumbing tooling." },
   { icon: Wallet, title: "Affordable Pricing", description: "Honest, upfront quotes — no hidden fees, no nasty surprises." },
   { icon: Sparkles, title: "Clean Workmanship", description: "We respect your space. Clean, neat installs that look as good as they work." },
   { icon: ShieldCheck, title: "Reliable Service", description: "On time, every time, with workmanship guaranteed in writing." },

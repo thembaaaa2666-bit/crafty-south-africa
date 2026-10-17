@@ -3,8 +3,8 @@ import nhbrc from "@/assets/accreditation-nhbrc-clean.jpg.asset.json";
 import pirb from "@/assets/accreditation-pirb.jpg.asset.json";
 
 const accreditations = [
-  { name: "NHBRC", fullName: "National Home Builders Registration Council", logo: nhbrc.url, description: "Protecting housing consumers and promoting standards in South Africa’s home-building industry." },
-  { name: "PIRB", fullName: "Plumbing Industry Registration Board", logo: pirb.url, description: "Supporting the registration of plumbing practitioners and accountability within the plumbing industry." },
+  { name: "NHBRC", fullName: "National Home Builders Registration Council", logo: nhbrc.url, description: "Protecting housing consumers and promoting standards in South Africa’s home-building industry.", regLabel: "Registration no.", regValue: "4000022320" },
+  { name: "PIRB", fullName: "Plumbing Industry Registration Board", logo: pirb.url, description: "Supporting the registration of plumbing practitioners and accountability within the plumbing industry.", regLabel: "Company ID", regValue: "74416" },
 ];
 
 const certificates = [
@@ -32,6 +32,11 @@ const Accreditations = () => (
               <h3 className="text-gold font-display text-2xl font-bold mb-2">{item.name}</h3>
               <p className="font-medium text-sm min-h-10 mb-3">{item.fullName}</p>
               <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+              <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1.5">
+                <BadgeCheck className="h-3.5 w-3.5 shrink-0 text-gold" />
+                <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">{item.regLabel}</span>
+                <span className="text-sm font-semibold tabular-nums text-gold">{item.regValue}</span>
+              </p>
             </div>
           </article>
         ))}

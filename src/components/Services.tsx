@@ -48,13 +48,13 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-px bg-border rounded-lg overflow-hidden">
+        <div className="flex flex-wrap gap-px bg-border rounded-lg overflow-hidden">
           {services.map((service) => {
             const Icon = service.icon;
             return (
               <div
                 key={service.title}
-                className="group relative bg-card p-8 hover:bg-secondary/50 transition-all duration-500 cursor-pointer"
+                className="group relative flex-1 min-w-[220px] bg-card p-8 hover:bg-secondary/50 transition-all duration-500 cursor-pointer"
                 onClick={scrollToContact}
               >
                 <div className="w-14 h-14 rounded-md border border-gold/30 bg-gold/5 flex items-center justify-center mb-5 group-hover:border-gold group-hover:bg-gold/10 group-hover:shadow-gold transition-all">

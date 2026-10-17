@@ -60,7 +60,7 @@ const Services = () => {
                 }`}
                 onClick={scrollToContact}
               >
-                <div className="w-14 h-14 shrink-0 rounded-md border border-gold/30 bg-gold/5 flex items-center justify-center mb-5 group-hover:border-gold group-hover:bg-gold/10 group-hover:shadow-gold transition-all">
+                <div className={`w-14 h-14 shrink-0 rounded-md border border-gold/30 bg-gold/5 flex items-center justify-center group-hover:border-gold group-hover:bg-gold/10 group-hover:shadow-gold transition-all ${isLast ? "" : "mb-5"}`}>
                   <Icon className="w-6 h-6 text-gold" strokeWidth={1.8} />
                 </div>
                 <div className={isLast ? "flex-1" : ""}>

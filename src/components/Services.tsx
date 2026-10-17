@@ -67,12 +67,14 @@ const Services = () => {
                   <h3 className="font-display text-xl font-bold mb-3 group-hover:text-gold transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-5 min-h-[60px]">
+                  <p className={`text-sm text-muted-foreground leading-relaxed ${isLast ? "" : "mb-5 min-h-[60px]"}`}>
                     {service.description}
                   </p>
-                  <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                    Learn More <ArrowRight className="w-3 h-3" />
-                  </div>
+                  {!isLast && (
+                    <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                      Learn More <ArrowRight className="w-3 h-3" />
+                    </div>
+                  )}
                 </div>
                 <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>

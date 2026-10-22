@@ -20,7 +20,8 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground leading-relaxed mb-6 max-w-sm">
               Your trusted partner for plumbing, drainage, property
               maintenance and basic welding & metal repairs — proudly serving
-              Mbombela and surrounding areas.
+              Nelspruit, White River, Barberton, Hazyview and surrounding
+              areas.
             </p>
             <div className="font-display text-lg italic gradient-text-gold">
               "Big or small, we solve it all."
@@ -53,7 +54,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2"><Phone className="w-4 h-4 text-gold mt-0.5 shrink-0" /><a href="tel:+27637052631" className="text-muted-foreground hover:text-gold">063 705 2631</a></li>
               <li className="flex items-start gap-2"><Mail className="w-4 h-4 text-gold mt-0.5 shrink-0" /><a href="mailto:info@pleasantsolutions.co.za" className="text-muted-foreground hover:text-gold break-all">info@pleasantsolutions.co.za</a></li>
-              <li className="flex items-start gap-2"><MapPin className="w-4 h-4 text-gold mt-0.5 shrink-0" /><span className="text-muted-foreground">Mbombela Municipality</span></li>
+              <li className="flex items-start gap-2"><MapPin className="w-4 h-4 text-gold mt-0.5 shrink-0" /><span className="text-muted-foreground">Nelspruit, White River, Barberton, Hazyview & surrounds</span></li>
             </ul>
             <div className="mt-5 pt-5 border-t border-border">
               <div className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Hours</div>

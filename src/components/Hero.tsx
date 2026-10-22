@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
             <span className="text-xs font-medium tracking-[0.2em] uppercase text-gold">
-              Mbombela • NHBRC Accredited
+              Serving Nelspruit • White River • Barberton • Hazyview
             </span>
           </div>
 
@@ -42,7 +42,8 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
             From plumbing and drainage to property maintenance, basic welding
             and metal repairs, and gardening — one reliable partner keeping
-            your property functional, safe and well maintained across Mbombela.
+            your property functional, safe and well maintained across
+            Nelspruit, White River, Barberton, Hazyview and surrounding areas.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">

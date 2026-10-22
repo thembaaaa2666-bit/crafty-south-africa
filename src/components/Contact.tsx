@@ -34,7 +34,7 @@ const Contact = () => {
     { icon: Phone, label: "Call or WhatsApp", value: "063 705 2631", href: "tel:+27637052631" },
     { icon: MessageCircle, label: "WhatsApp", value: "063 705 2631", href: "https://wa.me/27637052631" },
     { icon: Mail, label: "Email", value: "info@pleasantsolutions.co.za", href: "mailto:info@pleasantsolutions.co.za" },
-    { icon: MapPin, label: "Service Area", value: "Mbombela Municipality" },
+    { icon: MapPin, label: "Service Area", value: "Nelspruit, White River, Barberton, Hazyview & surrounds" },
     { icon: Clock, label: "Hours", value: "Mon–Sat 7:00–19:00 · 24/7 Emergency" },
     { icon: Facebook, label: "Facebook", value: "Pleasant Solutions", href: "https://facebook.com" },
   ];

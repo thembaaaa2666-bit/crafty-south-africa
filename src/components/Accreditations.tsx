@@ -1,4 +1,4 @@
-import { BadgeCheck, CheckCircle2, CloudRain, Droplets, ShieldCheck, Waves } from "lucide-react";
+import { BadgeCheck, CheckCircle2, CloudRain, Droplets, ShieldCheck, Sun, Waves } from "lucide-react";
 import nhbrc from "@/assets/accreditation-nhbrc-clean.jpg.asset.json";
 import pirb from "@/assets/accreditation-pirb.jpg.asset.json";
 
@@ -11,6 +11,7 @@ const certificates = [
   { icon: Droplets, title: "Hot & Cold Water Systems", description: "Potable water supply and distribution pipework." },
   { icon: Waves, title: "Above & Below Ground Drainage", description: "Waste and soil drainage, above and below ground." },
   { icon: CloudRain, title: "Rainwater Systems", description: "Rainwater collection and disposal installations." },
+  { icon: Sun, title: "Solar Geysers & Heat Pumps", description: "Installation, maintenance and compliance certification of solar water heating." },
 ];
 
 const Accreditations = () => (
@@ -52,7 +53,7 @@ const Accreditations = () => (
           </div>
           <h3 className="font-display text-2xl md:text-3xl font-bold mb-3">Certificates of <span className="gradient-text-gold">Compliance</span></h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            We are accredited by the Plumbing Industry Registration Board to issue Certificates of Compliance for hot and cold water systems, above and below ground drainage systems, and rainwater systems.
+            We are accredited by the Plumbing Industry Registration Board to issue Certificates of Compliance for hot and cold water systems, above and below ground drainage systems, rainwater systems, and solar geysers and heat pumps — which we also install and maintain.
           </p>
         </div>
         <ul className="grid gap-4">

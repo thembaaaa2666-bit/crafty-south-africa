@@ -11,6 +11,7 @@ import {
   Waves,
   Leaf,
   Flame,
+  Sun,
   ArrowRight,
 } from "lucide-react";
 
@@ -23,8 +24,9 @@ const services = [
   { icon: Cog, title: "Sink & Tap Installations", description: "Premium taps, mixers and basins installed to manufacturer specification." },
   { icon: Bath, title: "Bathroom Plumbing", description: "Showers, baths, basins, geysers — full bathroom plumbing solutions." },
   { icon: ChefHat, title: "Kitchen Plumbing", description: "Dishwashers, sinks, instant boilers and undersink work done right." },
-  { icon: Waves, title: "Sewer Line Cleaning", description: "Mainline cleaning, root removal and high-pressure flushing for free-flowing drains." },
+  { icon: Waves, title: "Sewer Line Cleaning", description: "Mainline cleaning, root removal and thorough drain cleaning for free-flowing drains." },
   { icon: Flame, title: "Basic Welding & Metal Repairs", description: "Practical welding and metal repairs for gates, hinges, brackets, frames, fencing and general property maintenance needs." },
+  { icon: Sun, title: "Solar Geysers & Heat Pumps", description: "Installation and maintenance of solar geysers and heat pumps, with Certificates of Compliance issued." },
   { icon: Leaf, title: "Gardening Services", description: "Garden maintenance, lawn care, hedge trimming and tidy-ups for homes & businesses." },
 ];
 
@@ -51,7 +53,7 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-px bg-border rounded-lg overflow-hidden">
           {services.map((service, i) => {
             const Icon = service.icon;
-            const isLast = i === services.length - 1;
+            const isLast = i === services.length - 1 && services.length % 4 !== 0;
             return (
               <div
                 key={service.title}

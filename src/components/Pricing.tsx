@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const tiers = [
-  { name: "Tap Installations", price: "450", popular: false, features: ["Tap supply check", "Old fitting removal", "Leak-proof installation", "Workmanship guaranteed"] },
-  { name: "Leak Repairs", price: "550", popular: false, features: ["Pipe repair or seal", "Pressure testing", "Fittings checked", "Clean-up included"] },
-  { name: "Toilet Repairs", price: "650", popular: false, features: ["Cistern diagnostics", "Seals & flush mechanism", "Blockage clearing", "Full functional test"] },
-  { name: "Drain Unblocking", price: "750", popular: true, features: ["Machine drain cleaning", "Blockage removal", "Drain inspection", "Preventive advice"] },
-  { name: "Pipe Repairs", price: "850", popular: false, features: ["Burst pipe repair", "Joint replacement", "Pressure restored", "Damage-controlled"] },
-  { name: "Plumbing Installations", price: "1200", popular: false, features: ["Full installation", "Premium fittings", "Compliance check", "Quality assurance"] },
+  { name: "Tap Installations", price: "900", popular: false, features: ["Tap supply check", "Old fitting removal", "Leak-proof installation", "Workmanship guaranteed"] },
+  { name: "Leak Repairs", price: "1100", popular: false, features: ["Pipe repair or seal", "Pressure testing", "Fittings checked", "Clean-up included"] },
+  { name: "Toilet Repairs", price: "1300", popular: false, features: ["Cistern diagnostics", "Seals & flush mechanism", "Blockage clearing", "Full functional test"] },
+  { name: "Drain Unblocking", price: "1500", popular: true, features: ["Machine drain cleaning", "Blockage removal", "Drain inspection", "Preventive advice"] },
+  { name: "Pipe Repairs", price: "1700", popular: false, features: ["Burst pipe repair", "Joint replacement", "Pressure restored", "Damage-controlled"] },
+  { name: "Plumbing Installations", price: "2400", popular: false, features: ["Full installation", "Premium fittings", "Compliance check", "Quality assurance"] },
 ];
 
 const Pricing = () => {

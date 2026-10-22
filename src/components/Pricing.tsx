@@ -22,8 +22,8 @@ const Pricing = () => {
             Honest rates, <span className="gradient-text-gold">no surprises</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Starting prices for our most-requested services. Get a precise
-            quote tailored to your job in minutes.
+            Starting prices for our most-requested services. Book an
+            appointment and we'll prepare a precise quote for your job.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const Pricing = () => {
         </div>
 
         <p className="text-center text-sm text-muted-foreground mt-12 max-w-2xl mx-auto italic">
-          * Final pricing depends on material requirements, property access, and job complexity. All quotes are free and obligation-free.
+          * Final pricing depends on material requirements, property access, and job complexity. Book an appointment so we can assess the work and prepare an accurate quote for you.
         </p>
       </div>
     </section>

@@ -52,7 +52,7 @@ const Hero = () => {
               onClick={() => scrollTo("contact")}
               className="gradient-gold text-primary-foreground hover:opacity-90 shadow-gold h-14 px-8 text-base group"
             >
-              Get Free Quote
+              Book an Appointment
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button

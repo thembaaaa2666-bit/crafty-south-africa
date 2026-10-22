@@ -88,7 +88,7 @@ const Services = () => {
             onClick={scrollToContact}
             className="gradient-gold text-primary-foreground hover:opacity-90 shadow-gold h-14 px-10"
           >
-            Request a Free Quote
+            Request an Appointment
             <ArrowRight className="w-4 h-4" />
           </Button>
         </div>

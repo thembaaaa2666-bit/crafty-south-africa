@@ -17,7 +17,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = `Quote request — ${formData.service || "General enquiry"}`;
+    const subject = `Appointment request — ${formData.service || "General enquiry"}`;
     const body = `Name: ${formData.name}%0D%0APhone: ${formData.phone}%0D%0AEmail: ${formData.email}%0D%0AService: ${formData.service}%0D%0A%0D%0A${formData.message}`;
     window.location.href = `mailto:info@pleasantsolutions.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
     toast({
@@ -47,11 +47,11 @@ const Contact = () => {
             — Get In Touch
           </div>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Request your <span className="gradient-text-gold">free quote</span>
+            Book an <span className="gradient-text-gold">appointment</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Tell us about your plumbing job. We'll respond within hours with
-            an honest, obligation-free quote.
+            Tell us about the job and book an appointment — we'll come out,
+            assess the work and prepare an accurate quote for you.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
                 <Textarea id="message" name="message" required value={formData.message} onChange={handleChange} rows={5} placeholder="Tell us what's happening, when you need it done, address…" className="bg-background border-border resize-none" />
               </div>
               <Button type="submit" size="lg" className="w-full gradient-gold text-primary-foreground hover:opacity-90 shadow-gold h-14">
-                Send Quote Request
+                Request an Appointment
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </form>

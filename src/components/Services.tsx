@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 const services = [
-  { icon: Droplets, title: "Drain Unblocking", description: "High-pressure drain clearing for stubborn blockages — kitchen, bathroom, sewer." },
+  { icon: Droplets, title: "Drain Unblocking", description: "Machine drain clearing for stubborn blockages — kitchen, bathroom, sewer." },
   { icon: Wrench, title: "Plumbing Installations", description: "Full plumbing systems for new builds, renovations and extensions." },
   { icon: Hammer, title: "Plumbing Repairs", description: "Fast, reliable repairs for burst pipes, faulty fittings and worn-out fixtures." },
   { icon: ShowerHead, title: "Toilet Repairs", description: "Cisterns, seals, flushes, blockages and full toilet replacements." },

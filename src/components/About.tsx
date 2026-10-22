@@ -46,8 +46,9 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-5">
               Pleasant Solutions is a proudly South African plumbing and
               property maintenance company serving residential, commercial,
-              industrial and public-sector clients across Mbombela and
-              surrounding areas of Mpumalanga. We combine practical trade
+              industrial and public-sector clients across Nelspruit (Mbombela),
+              White River, Barberton, Hazyview and surrounding areas of
+              Mpumalanga. We combine practical trade
               experience with modern equipment to deliver reliable, affordable
               and professional service — every time.
             </p>
